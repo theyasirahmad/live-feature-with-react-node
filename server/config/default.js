@@ -18,7 +18,7 @@ const config = {
         },
         trans: {
             // ffmpeg: 'C:/Program Files/ffmpeg/bin/ffmpeg.exe',
-            ffmpeg: '/app/vendor/ffmpeg/bin/ffmpeg',
+            ffmpeg: '/app/vendor/ffmpeg',
             tasks: [
                 {
                     app: 'live',
