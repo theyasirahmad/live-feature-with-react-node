@@ -53,9 +53,9 @@ app.get('/logout', (req, res) => {
     return res.redirect('/login');
 });
 
-app.get('*', middleware.ensureLoggedIn(), (req, res) => {
-    res.render('index');
-});
+// app.get('*', middleware.ensureLoggedIn(), (req, res) => {
+//     res.render('index');
+// });
 
 app.listen(process.env.PORT || 8080, () => console.log(`App listening on ${port}!`));
 node_media_server.run();
