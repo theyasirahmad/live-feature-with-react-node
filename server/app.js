@@ -21,6 +21,7 @@ mongoose.connect(
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './views'));
 app.use(express.static('public'));
+
 app.use('/thumbnails', express.static('server/thumbnails'));
 app.use(flash());
 
@@ -57,6 +58,6 @@ app.get('*', middleware.ensureLoggedIn(), (req, res) => {
     res.render('index');
 });
 
-app.listen(process.env.PORT || 8080, () => console.log(`App listening on ${port}!`));
+app.listen(process.env.PORT || 8080, () => console.log(`App listening on ${process.env.PORT || 8080}!`));
 node_media_server.run();
 thumbnail_generator.start();
