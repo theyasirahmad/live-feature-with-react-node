@@ -1,1 +1,1 @@
-web: node ./server/app.js && npm run watch
+web:  npm run watch  && npm run start
