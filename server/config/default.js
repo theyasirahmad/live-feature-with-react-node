@@ -1,6 +1,6 @@
 const config = {
     server: {
-        secret: 'kjVkuti2xAyF3JGCzSZTk0YWM5JhI9mgQW4rytXc',
+        secret: 'kjVkuti2xAyF3JGCzSZTk0YWM5JhI9mgQW4rytXc' ,
         port : 8080
     },
     rtmp_server: {
